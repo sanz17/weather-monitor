@@ -1,26 +1,52 @@
-import React from 'react';
-import Button from 'react-bootstrap/Button';
-import Form from 'react-bootstrap/Form';
+import React from "react";
+import Button from "react-bootstrap/Button";
+import Form from "react-bootstrap/Form";
+import GoogleButton from "react-google-button";
 
 function BasicExample() {
   return (
-    <Form style={{'backgroundColor':'pink','boxShadow':'revert','borderBlockStyle':'initial','padding':30}}>
+
+    <Form
+      style={{
+        backgroundColor: '#14636c',
+        boxShadow: "revert",
+        borderBlockStyle: "initial",
+        padding: 50,
+        textEmphasisColor:'GrayText',
+        borderStyle: "groove",
+        fontFamily: "roboto",
+        borderRadius: 10,
+      }}
+    >
       <Form.Group className="mb-3" controlId="formBasicEmail">
-        <Form.Label><b>Email address</b></Form.Label>
+        <Form.Label>
+          <b>Email address</b>
+        </Form.Label>
         <Form.Control type="email" placeholder="Enter email" />
-        <Form.Text className="text-muted">
-          We'll never share your email with anyone else.
-        </Form.Text>
+        
       </Form.Group>
 
       <Form.Group className="mb-3" controlId="formBasicPassword">
-        <Form.Label><b>Password</b></Form.Label>
+        <Form.Label>
+          <b>Password</b>
+        </Form.Label>
         <Form.Control type="password" placeholder="Password" />
       </Form.Group>
       <Button variant="primary" type="submit">
         Submit
       </Button>
-      <p>OR</p>
+      <p>
+
+        OR
+      </p>
+      <p style={{'padding':10}}>
+        <GoogleButton 
+          type="dark"
+          onClick={() => {
+            console.log("Google button clicked");
+          }}
+        />
+      </p>
     </Form>
   );
 }

@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Row, Col } from "react-bootstrap";
+import Aesth from './Aesth';
 import Login from './Login'
 
 export default function Loginpage() {
@@ -9,9 +10,7 @@ export default function Loginpage() {
           <Col>
             <Login />
           </Col>
-          {/* <Col>
-            hello
-          </Col> */}
+          
         </Row>
       </>
     );
