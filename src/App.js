@@ -1,14 +1,24 @@
 //import logo from './logo.svg';
-import './App.css';
-import Loginpage from './components/Loginpage'
-import 'bootstrap/dist/css/bootstrap.min.css';
-import { Image } from 'react-bootstrap'
+import "./App.css";
+import Loginpage from "./components/Loginpage";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Data from "./components/Data"
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Image } from "react-bootstrap";
 
 function App() {
   return (
-    <div className="App" style={{'backgroundColor':'#0e444e','backgroundImage':'../image/floral.jpg'}}>
-      <Loginpage/>
-    </div>
+    <>
+      <BrowserRouter>
+        
+        <Routes>
+          <Route path="/" element={<Loginpage />}></Route>
+          <Route path="/Data" element={<Data />}></Route>
+          {/* <Route path="/Add" element={<Add />}></Route>
+          <Route path="/View" element={<View />}></Route> */}
+        </Routes>
+      </BrowserRouter>
+    </>
   );
 }
 

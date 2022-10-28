@@ -8,14 +8,14 @@ function BasicExample() {
 
     <Form
       style={{
-        backgroundColor: '#14636c',
+        backgroundColor:'#d8d2d2',
         boxShadow: "revert",
         borderBlockStyle: "initial",
-        padding: 50,
+        padding: '31px',
         textEmphasisColor:'GrayText',
         borderStyle: "groove",
         fontFamily: "roboto",
-        borderRadius: 10,
+        borderRadius: '50px',
       }}
     >
       <Form.Group className="mb-3" controlId="formBasicEmail">

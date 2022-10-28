@@ -5,7 +5,7 @@ export class Aesth extends Component {
   render() {
     return (
       <div>
-        <Image src='../image/floral.jpg' thumbnail style={{'border':'none'}}/>
+        <Image src='../image/green.jpg' thumbnail style={{'border':'none'}}/>
       </div>
     )
   }
