@@ -2,8 +2,10 @@ import React from "react";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import GoogleButton from "react-google-button";
+import { useNavigate } from "react-router-dom";
 
 function BasicExample() {
+  const ng=useNavigate()
   return (
 
     <Form
@@ -34,7 +36,7 @@ function BasicExample() {
         </Form.Label>
         <Form.Control type="password" placeholder="Password" />
       </Form.Group>
-      <Button variant="primary" type="submit" style={{marginLeft: "190px"}}>
+      <Button variant="primary" type="submit" style={{marginLeft: "190px"}} onClick={()=>ng('Data')}>
         Submit
       </Button>
       <p style={{marginLeft: "210px"}}><b>OR</b></p>
