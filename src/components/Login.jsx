@@ -8,14 +8,16 @@ function BasicExample() {
 
     <Form
       style={{
-        backgroundColor:'#d8d2d2',
+        backgroundColor: "#d8d2d2",
         boxShadow: "revert",
         borderBlockStyle: "initial",
-        padding: '31px',
-        textEmphasisColor:'GrayText',
+        padding: "31px",
+        textEmphasisColor: "GrayText",
         borderStyle: "groove",
         fontFamily: "roboto",
-        borderRadius: '50px',
+        borderRadius: "50px",
+        marginLeft: "250px",
+        marginRight: "250px",
       }}
     >
       <Form.Group className="mb-3" controlId="formBasicEmail">
@@ -32,14 +34,11 @@ function BasicExample() {
         </Form.Label>
         <Form.Control type="password" placeholder="Password" />
       </Form.Group>
-      <Button variant="primary" type="submit">
+      <Button variant="primary" type="submit" style={{marginLeft: "190px"}}>
         Submit
       </Button>
-      <p>
-
-        OR
-      </p>
-      <p style={{'padding':10}}>
+      <p style={{marginLeft: "210px"}}><b>OR</b></p>
+      <p style={{marginLeft: "100px"}}>
         <GoogleButton 
           type="dark"
           onClick={() => {
