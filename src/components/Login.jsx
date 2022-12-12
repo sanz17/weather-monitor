@@ -24,7 +24,7 @@ function BasicExample() {
     >
       <Form.Group className="mb-3" controlId="formBasicEmail">
         <Form.Label>
-          <b>Email address</b>
+          <b style={{marginLeft: "271px"}}>Email address</b>
         </Form.Label>
         <Form.Control type="email" placeholder="Enter email" />
         
@@ -32,7 +32,7 @@ function BasicExample() {
 
       <Form.Group className="mb-3" controlId="formBasicPassword">
         <Form.Label>
-          <b>Password</b>
+          <b style={{marginLeft: "271px"}}>Password</b>
         </Form.Label>
         <Form.Control type="password" placeholder="Password" />
       </Form.Group>
