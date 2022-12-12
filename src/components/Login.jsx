@@ -36,11 +36,11 @@ function BasicExample() {
         </Form.Label>
         <Form.Control type="password" placeholder="Password" />
       </Form.Group>
-      <Button variant="primary" type="submit" style={{marginLeft: "190px"}} onClick={()=>ng('Data')}>
+      <Button variant="primary" type="submit" style={{marginLeft: "271px"}} onClick={()=>ng('Data')}>
         Submit
       </Button>
-      <p style={{marginLeft: "210px"}}><b>OR</b></p>
-      <p style={{marginLeft: "100px"}}>
+      <p style={{marginLeft: "298px"}}><b>OR</b></p>
+      <p style={{marginLeft: "185px"}}>
         <GoogleButton 
           type="dark"
           onClick={() => {
